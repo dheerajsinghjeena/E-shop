@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mega Menu</title>
+    <style>
+        .mega-menu-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 100%; /* चौड़ाई को पूरी स्क्रीन तक */
+    left: 0; /* स्थान बनाए रखने के लिए */
+    z-index: 1;
+}
+
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    background-color: #555;
+}
+
+.mega-menu {
+    position: relative;
+}
+
+.mega-menu-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 200px;
+    z-index: 1;
+}
+
+.mega-menu-content .column {
+    float: left;
+    width: 50%;
+}
+
+.mega-menu-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.mega-menu-content a:hover {
+    background-color: #ddd;
+}
+
+.mega-menu:hover .mega-menu-content {
+    display: block;
+}
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li class="mega-menu">
+                <a href="#">Products</a>
+                <div class="mega-menu-content">
+                    <div class="column">
+                        <h3>Category 1</h3>
+                        <a href="#">Product 1</a>
+                        <a href="#">Product 2</a>
+                        <a href="#">Product 3</a>
+                    </div>
+                    <div class="column">
+                        <h3>Category 2</h3>
+                        <a href="#">Product 4</a>
+                        <a href="#">Product 5</a>
+                        <a href="#">Product 6</a>
+                    </div>
+                    <div class="column">
+                        <h3>Category 2</h3>
+                        <a href="#">Product 4</a>
+                        <a href="#">Product 5</a>
+                        <a href="#">Product 6</a>
+                    </div>
+                    <div class="column">
+                        <h3>Category 2</h3>
+                        <a href="#">Product 4</a>
+                        <a href="#">Product 5</a>
+                        <a href="#">Product 6</a>
+                    </div>
+                </div>
+            </li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>One Shop 16</title>
+
+	
+
+</head>
+
+<body>
+
+	<!-- header linking -->
+	<div class="container-fluid p-0">
+		<%- include('./common/header2.ejs') %>
+	</div>
+	<!-- header linking -->
+
+
+	<div class="container-fluid p-0">
+	<div id="carouselExampleAutoplaying" class="carousel-fade" data-bs-ride="carousel" data-bs-interval="2000">
+		<div class="carousel-inner">
+			<div class="carousel-item  mar_top_70">
+				<img src="./public/image/newbanner1.avif" class="d-block w-100" alt="..." style="border-radius: 0%;">
+			</div>
+			<div class="carousel-item active mar_top_70">
+				<img src="./public/image/newban3.avif" class="d-block w-100" alt="..." style="border-radius: 0%;">
+			</div>
+
+			<div class="carousel-item  mar_top_70">
+				<img src="./public/image/4661849_2481349.jpg" class="d-block newimg" alt="..." style="border-radius: 0%;">
+			</div>
+		</div>
+	 
+	</div>
+</div>
+
+
+<div class="container p-0 mt-5">
+	<div class="col-md-12">
+		<h2 class=" mb-4 text-center mb-2 " style="font-size: 30px; font-weight: 600; text-shadow: 1px 1px grey;">Trendings</h2>
+	</div>
+	<div class="row">
+		<% for(a=0; a<data6.length; a++){%>
+		<div class="col-md-2 ful mt-3 p-0">
+		<a href="/sarees">	<img src="/<%= data6[a].Trending_img %>"  class="image-fluid mda" alt="Left Image" style="height: 200px;"> </a> 
+		</div>
+		<%}%>
+		
+	</div>
+	
+</div>
+
+
+
+
+	
+
+	<!-- cards -->
+
+	<div class="py-3 py-md-5  p-0" style="margin-top: 110px; ">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class=" mb-4 text-center mb-2 " style="font-size: 30px; font-weight: 600; text-shadow: 1px 1px grey;">Vogue Vision
+					</h2>
+				</div>
+				<div class="col-md-3">
+					<div class="product-card newmp ">
+						<div class="product-card-img ">
+
+						</div>
+						<div class="product-card-body ">
+							<a href="#">
+							<video muted loop autoplay width="100%" style="height: 100%;">
+									<source src="./public/image/video1.mp4" type="video/mp4" >
+							</video>
+						</a>
+						</div>
+					</div>
+				</div>
+
+
+
+
+				<div class="col-md-3">
+					<div class="product-card newmp">
+						<div class="product-card-img">
+							<!-- <label class="stock bg-success">In Stock</label> -->
+
+						</div>
+						<div class="product-card-body">
+							<a href="#">
+
+							<video muted loop autoplay width="100%" style="height: 100%;">
+
+								<source src="./public/image/video2.mp4" type="video/mp4">
+							</video>
+							</a>
+						</div>
+					</div>
+				</div>
+
+
+				<!-- 3rd -->
+				<div class="col-md-3">
+					<div class="product-card newmp">
+						<div class="product-card-img">
+							<!-- <label class="stock bg-success">In Stock</label> -->
+
+						</div>
+						<div class="product-card-body">
+							<a href="#">
+
+							<video muted loop autoplay width="100%" style="height: 100%;">
+
+								<source src="./public/image/video4.mp4" type="video/mp4">
+							</video>
+							</a>
+						</div>
+					</div>
+				</div>
+
+
+				<!-- 4th -->
+				<div class="col-md-3">
+					<div class="product-card newmp">
+						<div class="product-card-img">
+							<!-- <label class="stock bg-success">In Stock</label> -->
+
+						</div>
+						<div class="product-card-body">
+							<a href="#">
+
+							<video muted loop autoplay width="100%" style="height: 100%;">
+
+								<source src="./public/image/videdo3.mp4" type="video/mp4">
+							</video>
+						</a>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+
+
+		</div>
+
+
+
+
+	</div>
+	<!-- end -->
+	<!-- <div class="col-12 text-center  p-0" style="font-size: 30px; font-weight: 800; margin-top: 110px;"><i
+			class="fa-solid fa-down-long" style="color: #010813;"></i></div> -->
+
+
+	<div class="container2 p-0 ">
+		<div class="row ">
+			<div class="col mt-5 ">
+				<img src="./public/image/e1.webp" class="inener" alt="Image 1">
+
+			</div>
+			<div class="col mt-5">
+				<img src="./public/image/e2.webp" alt="Image 2">
+			</div>
+			<div class="col mt-5">
+				<img src="./public/image/e3.webp" alt="Image 3">
+			</div>
+			<div class="col mt-5">
+				<img src="./public/image/e4.webp" alt="Image 4">
+			</div>
+			<div class="col mt-5">
+				<img src="./public/image/e5.webp" alt="Image 4">
+			</div>
+		</div>
+	</div>
+
+
+	<div class="col-12 text-center mt-5 p-0" style="font-size: 30px; font-weight: 800;">
+		<hr>
+	</div>
+
+	<div class="col-12 text-center mt-5 p-0" style="font-size: 30px; font-weight: 600;">Discover The Collection </div>
+
+	<div class="contain">
+		<div id="recipeCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+			<div class="carousel-inner" role="listbox">
+				<% for(var i = 0; i < regdata.length; i++) { %>
+					<div class="carousel-item <% if(i === 0) { %>active<% } %>">
+								<div class="cards ms-4">
+									<div class="imgBx">
+										<img src="<%= regdata[i].image %>" class="rounded-3" alt="Product Image">
+										<ul class="action">
+											<li>
+												<button class="whislistCartBtn border-0 bg-transparent"
+												data-product-name="<%= regdata[i].product_Name %>"
+												data-price="<%= regdata[i].price %>"
+												data-image="<%= regdata[i].image %>"
+												data-image="<%= regdata[i].image %>"
+												
+												
+												>
+												<i class="fa fa-heart" aria-hidden="true"></i>
+												<span>Add to wishlist</span>
+												</button>
+											</li>
+											<li>
+                                    <button class="addToCartBtn border-0 bg-transparent"
+                                        data-product-name="<%= regdata[i].product_name %>"
+                                        data-price="<%= regdata[i].price %>"
+                                        data-image="<%= regdata[i].image %>"
+                                        data-image="<%= regdata[i].image %>"
+                                        data-image="<%= regdata[i].quantity%>"
+										
+										>
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                        <span>Add to cart</span>
+                                    </button>
+											</li>
+											<li><a href="/detail/<%= regdata[i].product_id	 %>">
+												<i class="fa fa-eye" aria-hidden="true" style="color: black;"></i>
+												<span>View Details</span></a>
+											</li>
+										</ul>
+								</div>
+									<div class="content">
+										<div class="productName"><%= regdata[i].product_name %></div>
+										<div class="price-rating">
+											<h2><%= regdata[i].price %></h2>
+											<div class="rating">
+												<i class="fa fa-star" aria-hidden="true"></i>
+												<i class="fa fa-star" aria-hidden="true"></i>
+												<i class="fa fa-star" aria-hidden="true"></i>
+												<i class="fa fa-star" aria-hidden="true"></i>
+												<i class="fa grey fa-star" aria-hidden="true"></i>
+											</div>
+										</div>
+									</div>
+								</div>
+					</div>
+				<% } %>
+			</div>
+			<a class="carousel-control-prev bg-dark w-auto pnbt" href="#recipeCarousel" role="button" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			</a>
+			<a class="carousel-control-next bg-dark w-auto pnbt" href="#recipeCarousel" role="button" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			</a>
+		</div>
+	</div>
+
+
+
+
+
+	<!-- vvd -->
+
+	<div class="col-12 text-center mt-5 p-0" style="font-size: 20px; font-weight: 600;">FESTIVE HIGHLIGHTS</div>
+
+
+	<!-- <div class="container2 mt-3 p-0">
+		<div class="row">
+			<div class="col	">
+				<img src="./public/image/k1.webp" width="100%" alt="Image 1">
+
+			</div>
+			<div class="col">
+				<img src="./public/image/k2.webp" alt="Image 2">
+			</div>
+			<div class="col">
+				<img src="./public/image/k3.webp" alt="Image 3">
+			</div>
+			<div class="col">
+				<img src="./public/image/k4.webp" alt="Image 4">
+			</div>
+		</div>
+	</div> -->
+
+
+
+	<div class="container-fluid mt-3 ">
+		<div class="row">
+			<div class="col-3 col-md-3 p-0">
+				<img src="./public/image/k1.webp"  alt="Image 1">
+
+			</div>
+			<div class="col-3 col-md-3 p-0">
+				<img src="./public/image/k2.webp" alt="Image 2">
+			</div>
+			<div class="col-3 col-md-3 p-0">
+				<img src="./public/image/k3.webp" alt="Image 3">
+			</div>
+			<div class="col-3 col-md-3 p-0">
+				<img src="./public/image/k4.webp" alt="Image 4">
+			</div>
+		</div>
+	</div>
+
+
+	<div class="container-fluid p-0 mt-5">
+		<%- include('./common/footer.ejs') %>
+	</div>
+
+
+
+	<!-- 
+	<div class="container1">
+		<div class="col-6 ">
+		<img src="./public/image/pp1.jpg" alt="Left Image">
+	</div>
+		<div class="text col-6">
+			<h1>Women Fashions</h2>
+			<p style="color:  #cf2b2b ;">Women's clothing is a broad term that refers to any type of clothing that is designed to be worn by women. It can include a wide variety of ...
+			</p>
+		</div>
+	</div> -->
+
+
+	
+
+
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+
+
+
+	<script src="../public/js/link.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+	
+</body>	
+
+<script>
+	$(document).ready(function () {
+		$(window).scroll(function () {
+			var positionTop = $(document).scrollTop();
+			console.log(positionTop);
+			if ((positionTop > 1600) && (positionTop < 1750)) {
+				$("#animate2").addClass("animate__animated animate__backInLeft");
+
+			}
+
+			if ((positionTop > 1600) && (positionTop < 1750)) {
+				$("#animate1").addClass("animate__animated animate__backInDown");
+			}
+
+			if ((positionTop > 1600) && (positionTop < 1750)) {
+				$("#animate3").addClass("animate__animated animate__backInRight");
+			}
+
+			if ((positionTop > 1600) && (positionTop < 1750)) {
+				$("#animate4").addClass("animate__animated animate__backInLeft");
+			}
+
+
+			if ((positionTop > 1600) && (positionTop < 1750)) {
+				$("#animate5").addClass("animate__animated animate__backInLeft");
+			}
+
+
+			if ((positionTop > 1600) && (positionTop < 1750)) {
+				$("#animate6").addClass("animate__animated animate__backInLeft");
+			}
+
+			if ((positionTop > 1600) && (positionTop < 1750)) {
+				$("#animate7").addClass("animate__animated animate__backInLeft");
+			}
+
+			if ((positionTop > 1600) && (positionTop < 1750)) {
+				$("#animate8").addClass("animate__animated animate__backInLeft");
+			}
+
+
+
+
+		})
+
+
+	})
+</script>
+
+
+
+
+
+</html>

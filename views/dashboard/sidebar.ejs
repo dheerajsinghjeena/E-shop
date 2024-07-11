@@ -1,0 +1,101 @@
+        <style>
+
+/* 
+            @media (max-width: 768px) {
+                .sidebar {
+                    display: none;
+                }
+                
+            } */
+            
+             
+        </style>
+    
+    <!-- Sidebar -->
+    <div class="col-3 col-md-1 col-sm-3 show sidebar" style="margin-top: 100px; background-color: #8c8bbfa1; position: fixed;">
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link" href="/mainaddproduct" data-toggle="tooltip" data-placement="right" title="Add Product"> <img src="../public/image/add.png" alt="" height="30px" width="35px"> </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/virew-registration" data-toggle="tooltip" data-placement="right" title="View Users"><img src="../public/image/view.png" alt="" height="30px" width="30px"></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/view-product" data-toggle="tooltip" data-placement="right" title="View Products"> <img src="../public/image/product-development.png" alt="" height="30px" width="38px"></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/trending_add_img" data-toggle="tooltip" data-placement="right" title="Trending Img"><img src="../public/image/photo.png" alt="" height="30px" width="26px"></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/view-trending" data-toggle="tooltip" data-placement="right" title="View Trending"><img src="../public/image/product-development.png" alt="" height="30px" width="35px"></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/mainupdate" data-toggle="tooltip" data-placement="right" title="Update"><img src="../public/image/recycle.png" alt="" height="30px" width="35px"></a>
+            </li>
+        </ul>
+    </div>
+    
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+    
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+    
+    <!-- Script to toggle sidebar -->
+    <script>
+
+
+        function sidebar_hide_show(){
+            var screenWidth = $(window).width();
+            console.log(screenWidth,'screenWidth')
+            if(screenWidth<=768){
+            $('.sidebar').removeClass('show');
+            }
+        }
+
+    // $(document).on('change',function(){
+    //     sidebar_hide_show()
+    // })
+
+    $(window).resize(function() {
+        sidebar_hide_show();
+    });
+
+        $(document).ready(function() {
+            $('.sidebar').addClass('show')
+        sidebar_hide_show()
+
+        $('#sidebarToggle').on('click', function() {
+
+            $('.sidebar').toggleClass('show');
+            $('.sidebar').removeClass('hide');
+            // $('.sidebar').style.display=block
+        })
+        
+    })
+    </script>
+
+    <!-- Logout Functionality -->
+    <script>
+        $(document).ready(function () {
+            $('#logoutButton').on('click', function () {
+                $.ajax({
+                    url: '/logout',
+                    method: 'POST',
+                    success: function (res) {
+                        window.location.href = '/';
+                    },
+                    error: function (error) {
+                        console.error('Error logging out:', error);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
